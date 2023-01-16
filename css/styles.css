@@ -1,0 +1,180 @@
+/* =======================CUSTOM============================= */
+:root {
+  --main-font-family: "Roboto", sans-serif;
+  --logo-font-family: "Raleway", sans-serif;
+  --brand-color: #4d5ae5;
+  --accent-link-color: #4d5ae5;
+  --hero-text-color: #ffffff;
+  --primary-text-color: #2e2f42;
+  --logo-light-theme: #f4f4fd;
+  --body-text-color: #434455;
+  --main-background-color: #ffffff;
+  --background-color-dark: #2e2f42;
+  --section-background-color: #f4f4fd;
+  --subtitle-background: #e7e9fc;
+  --button-text-color: #ffffff;
+  --accent-button-color: #404bbf;
+  --filter-background-color: #f4f4fd;
+}
+/* =======================/CUSTOM============================= */
+
+/* =======================GLOBAL SETTINGS====================*/
+body {
+  font-family: var(--main-font-family);
+  color: var(--primary-text-color);
+  background-color: var(--main-background-color);
+  font-size: 16;
+}
+/* =======================/GLOBAL SETTINGS====================*/
+
+/* =====================COMPONENTS============================ */
+.link-none {
+  text-decoration: none;
+}
+.list-none {
+  list-style: none;
+}
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-text-color);
+}
+.section-suptitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.section-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--body-text-color);
+}
+/* =====================/COMPONENTS============================ */
+
+/* ======================HEADER============================== */
+.logo-link {
+  font-family: var(--logo-font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-color);
+}
+.logo-dark {
+  color: var(--primary-text-color);
+}
+.logo-light {
+  color: var(--logo-light-theme);
+}
+
+.menu-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: currentColor;
+}
+
+.header-nav .menu-link.current {
+  color: var(--accent-link-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-link-color);
+}
+
+.contacts-link {
+  font-style: normal;
+  line-height: 1.5px;
+  letter-spacing: 0.02em;
+  color: currentColor;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-link-color);
+}
+/* ======================/HEADER============================== */
+
+/* ======================HERO================================= */
+.container-hero {
+  background-color: var(--background-color-dark);
+}
+
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--hero-text-color);
+}
+.hero-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--button-text-color);
+  background-color: var(--brand-color);
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-button-color);
+}
+/* ======================/HERO================================= */
+
+/* =======================SECTION ONE======================== */
+/* =======================/SECTION ONE======================== */
+
+/* =======================SECTION TWO======================== */
+
+/* =======================/SECTION TWO======================== */
+
+/* =======================SECTION TREE======================== */
+.container-team {
+  background-color: var(--section-background-color);
+}
+.team-cards {
+  background-color: var(--main-background-color);
+}
+/* =======================/SECTION TREE======================== */
+
+/* =========================FOOTER============================== */
+.footer {
+  background-color: var(--background-color-dark);
+}
+.footer-dscr {
+  color: var(--subtitle-background);
+}
+
+/* =========================/FOOTER============================== */
+
+/*+++++++++++++++++++++++++PAGE PORTFOLIO+++++++++++++++++++++++++ */
+
+/* ======================BUTTONS FILTER=========================== */
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--brand-color);
+  background-color: var(--filter-background-color);
+  cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--button-text-color);
+  background-color: var(--accent-button-color);
+}
+/* ======================/BUTTONS FILTER=========================== */
+
+/* =======================MAIN CONTENT============================= */
+
+/* =======================/MAIN CONTENT============================= */
+
+/*+++++++++++++++++++++++++/PAGE PORTFOLIO+++++++++++++++++++++++++ */
