@@ -18,6 +18,22 @@
 }
 /* =======================/CUSTOM============================= */
 
+/* ========================RESET============================= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+/* ========================/RESET============================= */
+
 /* =======================GLOBAL SETTINGS====================*/
 body {
   font-family: var(--main-font-family);
@@ -28,6 +44,20 @@ body {
 /* =======================/GLOBAL SETTINGS====================*/
 
 /* =====================COMPONENTS============================ */
+.container {
+  width: 1158px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 2px solid red;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: lightsalmon;
+}
+
 .link-none {
   text-decoration: none;
 }
@@ -56,7 +86,24 @@ body {
 /* =====================/COMPONENTS============================ */
 
 /* ======================HEADER============================== */
+.header {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.header-box {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo-link {
+  margin-right: 76px;
   font-family: var(--logo-font-family);
   font-weight: 800;
   font-size: 18px;
@@ -72,6 +119,14 @@ body {
   color: var(--logo-light-theme);
 }
 
+.menu-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  padding-right: 40px;
+}
 .menu-link {
   font-weight: 500;
   line-height: 1.5;
@@ -87,6 +142,18 @@ body {
 .menu-link:focus {
   color: var(--accent-link-color);
 }
+.contacts-box {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+.contacts-item:not(:last-child) {
+  margin-right: 40px;
+}
 
 .contacts-link {
   font-style: normal;
@@ -98,10 +165,11 @@ body {
 .contacts-link:focus {
   color: var(--accent-link-color);
 }
+
 /* ======================/HEADER============================== */
 
 /* ======================HERO================================= */
-.container-hero {
+.hero {
   background-color: var(--background-color-dark);
 }
 
@@ -135,7 +203,7 @@ body {
 /* =======================/SECTION TWO======================== */
 
 /* =======================SECTION TREE======================== */
-.container-team {
+.team {
   background-color: var(--section-background-color);
 }
 .team-cards {
