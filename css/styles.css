@@ -45,7 +45,7 @@ body {
 
 /* =====================COMPONENTS============================ */
 .container {
-  width: 1158px;
+  max-width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -190,6 +190,7 @@ body {
   text-align: center;
   color: var(--hero-text-color);
 }
+/* Тут треба переробляти, бо ширина головного заголовка не збігається з макетом + доробити кнопу там теж саме */
 .hero-btn {
   display: flex;
   min-width: 168px;
@@ -216,6 +217,17 @@ body {
 /* ======================/HERO================================= */
 
 /* =======================SECTION ONE======================== */
+.principles-list {
+  display: flex;
+  gap: 24px;
+}
+.principles-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+.principles-title {
+  margin-bottom: 8px;
+}
+/* НЕ ТА ШИРИНА */
 /* =======================/SECTION ONE======================== */
 
 /* =======================SECTION TWO======================== */
