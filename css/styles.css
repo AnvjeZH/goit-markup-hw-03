@@ -45,7 +45,7 @@ body {
   font-family: var(--main-font-family);
   color: var(--primary-text-color);
   background-color: var(--main-background-color);
-  font-size: 16;
+  font-size: 16px;
 }
 /* =======================/GLOBAL SETTINGS====================*/
 
@@ -54,10 +54,8 @@ body {
   max-width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-top: 0;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 0;
   /* outline: 2px solid red; */
 }
 
@@ -78,6 +76,10 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .section-title {
   font-size: 36px;
@@ -105,15 +107,13 @@ body {
 
 /* ======================HEADER============================== */
 .header {
-  border: 1px solid var(--border-color);
-  border-top: none;
-  border-right: none;
-  border-left: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid var(--border-color);
 }
 .header-box {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-nav {
   display: flex;
@@ -148,8 +148,8 @@ body {
   margin-right: 40px;
 }
 .menu-link {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   font-weight: 500;
   line-height: 1.5;
@@ -180,8 +180,8 @@ body {
 }
 
 .contacts-link {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   font-style: normal;
   line-height: 1.5px;
@@ -241,8 +241,8 @@ body {
 /* ======================/HERO================================= */
 
 /* =======================SECTION ONE======================== */
-.section-principles {
-  padding-top: 120px;
+.principles {
+  padding-bottom: 0;
 }
 .principles-list {
   display: flex;
@@ -258,10 +258,6 @@ body {
 /* =======================/SECTION ONE======================== */
 
 /* =======================SECTION TWO======================== */
-.section-works {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 .works-title {
   margin-left: auto;
   margin-right: auto;
@@ -278,11 +274,7 @@ body {
 /* =======================/SECTION TWO======================== */
 
 /* =======================SECTION TREE======================== */
-.section-team {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-.section-team {
+.team {
   background-color: var(--section-background-color);
 }
 .team-title {
@@ -324,6 +316,9 @@ body {
   padding-bottom: 100px;
 
   background-color: var(--background-color-dark);
+}
+.footer .logo-link {
+  margin-right: 0;
 }
 .footer-dscr {
   width: 264px;
@@ -373,19 +368,18 @@ body {
 /* ======================/BUTTONS FILTER=========================== */
 
 /* =======================MAIN CONTENT============================= */
-.section-portfolio {
+.portfolio {
   padding-top: 96px;
-  padding-bottom: 120px;
 }
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
 }
-/* .portfolio-item {
+.portfolio-item {
   flex-basis: calc((100% - 192px) / 9);
 }
-.portfolio-item:not(:nth-child(3n)) {
+/* .portfolio-item:not(:nth-child(3n)) {
   margin-right: 24px;
 }
 .portfolio-item:not(:nth-last-child(-n + 3)) {
